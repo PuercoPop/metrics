@@ -176,3 +176,11 @@ when there is no longer anything to take away.
 You!  What PLANET is this!
 		-- McCoy, "The City on the Edge of Forever", stardate 3134.0
 Cold hands, no gloves.
+/*
+ * [...] Note that 120 sec is defined in the protocol as the maximum
+ * possible RTT.  I guess we'll have to use something other than TCP
+ * to talk to the University of Mars.
+ * PAWS allows us longer timeouts and large windows, so once implemented
+ * ftp to mars will work nicely.
+ */
+(from /usr/src/linux/net/inet/tcp.c, concerning RTT [retransmission timeout])
